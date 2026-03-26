@@ -1,3 +1,42 @@
 .backgroundHome{
     background-color: #010101;
+    min-height: 80vh;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#heroVideo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.storeSlider{
+    min-height:  0vh;
+    background-color: #010101;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 350px;
+}
+
+.storeSlider > div{
+    margin: 5%;
+    background: #83151C;
+    background: linear-gradient(90deg,rgba(131, 21, 28, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(205, 108, 42, 1) 100%);
+
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height:  50vh;
+}
+
+.aboutInner {
+    overflow: hidden;
 }
