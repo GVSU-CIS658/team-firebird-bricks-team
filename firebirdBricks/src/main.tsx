@@ -7,7 +7,10 @@ import Ambassador from "./pages/ambassador";
 import Consulting from "./pages/consulting";
 import Contact from "./pages/contact";
 import Sponsor from "./pages/sponsor";
+import Login from "./pages/login";
+import Members from "./pages/members";
 import NavBar from "./components/navBar";
+import { AuthProvider } from "./components/authContext";
 import "./style.css";
 
 const App = () => {
@@ -21,6 +24,8 @@ const App = () => {
         <Route path="/consulting" element={<Consulting />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/sponsor" element={<Sponsor />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/members" element={<Members />} />
       </Routes>
     </>
   );
@@ -29,7 +34,9 @@ const App = () => {
 ReactDOM.createRoot(document.getElementById("app")!).render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <AuthProvider>
+        <App />
+      </AuthProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

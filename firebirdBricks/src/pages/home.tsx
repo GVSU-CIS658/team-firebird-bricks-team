@@ -66,6 +66,21 @@ export default function Home() {
           <button className="ambassador-btn">View Ambassador Program</button>
         </Link>
       </div>
+
+      <div className="sponsor-home-simple">
+        <h2>Want to Sponsor Firebird Bricks?</h2>
+        <p>
+          Get your brand in front of a passionate LEGO audience on YouTube.
+        </p>
+
+        <Link to="/sponsor">
+          <button className="ambassador-btn">View Sponsor Options</button>
+        </Link>
+      </div>
+
+      <footer className="about-footer">
+        <p>© 2026 Firebird Bricks • Built with passion for LEGO</p>
+      </footer>
     </div>
   );
 }
