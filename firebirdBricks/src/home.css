@@ -698,6 +698,127 @@
   box-shadow: 0 10px 24px rgba(245, 166, 35, 0.3);
 }
 
+.sponsor-page {
+  min-height: 100vh;
+  background: #0f0f0f;
+  color: white;
+  animation: fadeIn 0.8s ease-in;
+}
+
+.sponsor-hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 70px 20px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.sponsor-hero-image {
+  height: 320px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.sponsor-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.sponsor-label {
+  color: #f5a623;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.sponsor-hero-text h1 {
+  font-size: 3rem;
+  line-height: 1.3;
+  padding: 10px 0;
+  margin: 10px 0 20px;
+}
+
+.sponsor-hero-text p {
+  color: #d6d6d6;
+  line-height: 1.8;
+}
+
+.sponsor-info,
+.sponsor-benefits,
+.sponsor-next {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.sponsor-info {
+  background: linear-gradient(135deg, #171717, #242424);
+  border-radius: 24px;
+  border-left: 5px solid #f5a623;
+  padding: 36px;
+  margin: 0 auto 30px;
+}
+
+.sponsor-info h2,
+.sponsor-benefits h2,
+.sponsor-next h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.sponsor-info p,
+.sponsor-next p {
+  color: #d6d6d6;
+  line-height: 1.8;
+}
+
+.sponsor-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.sponsor-card {
+  background: #1a1a1a;
+  padding: 26px;
+  border-radius: 22px;
+  border: 1px solid rgba(245, 166, 35, 0.25);
+  transition: 0.3s ease;
+}
+
+.sponsor-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 28px rgba(245, 166, 35, 0.25);
+}
+
+.sponsor-card h3 {
+  margin-bottom: 12px;
+  color: #f5a623;
+}
+
+.sponsor-card p {
+  color: #d6d6d6;
+  line-height: 1.7;
+}
+
+.sponsor-next {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 900px) {
+  .sponsor-hero {
+    grid-template-columns: 1fr;
+  }
+  .sponsor-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 900px) {
   .ambassador-hero {
     grid-template-columns: 1fr;

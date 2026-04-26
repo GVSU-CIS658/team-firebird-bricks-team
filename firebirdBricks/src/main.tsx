@@ -6,6 +6,7 @@ import About from "./pages/about";
 import Ambassador from "./pages/ambassador";
 import Consulting from "./pages/consulting";
 import Contact from "./pages/contact";
+import Sponsor from "./pages/sponsor";
 import NavBar from "./components/navBar";
 import "./style.css";
 
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/ambassador" element={<Ambassador />} />
         <Route path="/consulting" element={<Consulting />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/sponsor" element={<Sponsor />} />
       </Routes>
     </>
   );
