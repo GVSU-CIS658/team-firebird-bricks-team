@@ -2,8 +2,10 @@ import "../home.css";
 import heroVideo from "../assets/heroVideo.mp4";
 import aboutImage from "../assets/homeAbout.png";
 import { Link } from "react-router-dom";
+import { useAuth } from "../components/authContext";
 
 export default function Home() {
+  const { user } = useAuth();
   return (
     <div>
       <div className="backgroundHome">
@@ -19,24 +21,18 @@ export default function Home() {
         </div>
       </div>
 
-      <h2 className="storeTitle">Featured Merch</h2>
-      <div className="storeSlider">
-        <div className="storeItem1">
-          <h3>Firebird Tee</h3>
-          <p>$24.99</p>
-        </div>
-        <div className="storeItem2">
-          <h3>Brick Mug</h3>
-          <p>$14.99</p>
-        </div>
-        <div className="storeItem3">
-          <h3>Sticker Pack</h3>
-          <p>$6.99</p>
-        </div>
-        <div className="storeItem4">
-          <h3>Poster Print</h3>
-          <p>$12.99</p>
-        </div>
+      <div className="members-home-ad">
+        <h2>Become a Firebird Bricks Member</h2>
+        <p>
+          Sign up for free and unlock exclusive content, behind-the-scenes
+          videos, early access releases, and member-only LEGO builds.
+        </p>
+
+        <Link to={user ? "/members" : "/login"}>
+          <button className="ambassador-btn">
+            {user ? "Go to Members Area" : "Register / Login"}
+          </button>
+        </Link>
       </div>
 
       <div className="about">
@@ -59,8 +55,11 @@ export default function Home() {
       </div>
 
       <div className="ambassador-home-simple">
-        <h2>Interested in joining Firebird Bricks?</h2>
-        <p>Learn more about our LEGO Ambassador Program.</p>
+        <h2>Interested in the LEGO® Ambassador Program?</h2>
+        <p>
+          Learn how Firebird Bricks partners with the LEGO® Ambassador Network
+          to celebrate and promote LEGO worldwide.
+        </p>
 
         <Link to="/ambassador">
           <button className="ambassador-btn">View Ambassador Program</button>
