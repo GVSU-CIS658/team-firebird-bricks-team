@@ -12,67 +12,76 @@ export default function Ambassador() {
 
         <div className="ambassador-hero-text">
           <p className="ambassador-label">Firebird Bricks</p>
-          <h1>Ambassador Program</h1>
+          <h1>LEGO® Ambassador Network</h1>
           <p>
-            Join the Firebird Bricks community and help share creativity, LEGO
-            builds, and exciting content with fans around the world.
+            Firebird Bricks is a proud partner of the LEGO® Ambassador Network
+            (LAN), helping share and celebrate LEGO with fans around the world.
           </p>
         </div>
       </section>
 
       <section className="ambassador-info">
-        <h2>What is the Ambassador Program?</h2>
+        <h2>What is the LEGO® Ambassador Network?</h2>
         <p>
-          The Ambassador Program is for LEGO fans, creators, and supporters who
-          want to represent Firebird Bricks, promote content, and be part of a
-          growing creative community.
+          The LEGO® Ambassador Network (LAN) is an official program run by The
+          LEGO Group that brings together communities of LEGO fans. Its goal is
+          to promote LEGO worldwide by giving fans ways to connect, share
+          builds, and stay engaged with the wider LEGO community.
         </p>
       </section>
 
       <section className="ambassador-benefits">
-        <h2>What Ambassadors Get</h2>
+        <h2>Recognized Community Types</h2>
 
         <div className="ambassador-card-grid">
           <div className="ambassador-card">
-            <h3>Community Access</h3>
-            <p>Connect with other LEGO fans and Firebird Bricks supporters.</p>
+            <h3>RLUG</h3>
+            <p>
+              Recognized LEGO User Groups are local fan groups that meet in
+              person to build, share, and host events in their city or region.
+            </p>
           </div>
 
           <div className="ambassador-card">
-            <h3>Featured Support</h3>
-            <p>Get opportunities to be recognized through Firebird Bricks.</p>
+            <h3>RLFM</h3>
+            <p>
+              Recognized LEGO Fan Media includes blogs, magazines, and YouTube
+              channels (like Firebird Bricks) that create LEGO content for fans
+              everywhere.
+            </p>
           </div>
 
           <div className="ambassador-card">
-            <h3>Creative Involvement</h3>
-            <p>Share ideas, feedback, and help grow the channel community.</p>
+            <h3>RLOC</h3>
+            <p>
+              Recognized LEGO Online Communities exist entirely online, hosting
+              discussions, builds, and competitions for fans across the globe.
+            </p>
           </div>
         </div>
       </section>
 
-      <section className="ambassador-form-section">
-        <h2>Apply to Become an Ambassador</h2>
-
-        <form className="ambassador-form">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email Address" />
-          <input type="text" placeholder="Social Media / YouTube Link" />
-          <textarea placeholder="Why do you want to become an ambassador?"></textarea>
-          <button type="submit">Submit Application</button>
-        </form> 
+      <section className="ambassador-info">
+        <h2>Our Partnership</h2>
+        <p>
+          As a proud partner of the LEGO® Ambassador Network, Firebird Bricks
+          works to celebrate creativity, share inspiring builds, and promote
+          LEGO to fans of all ages. We're honored to be part of a global
+          community that keeps the LEGO hobby alive and growing.
+        </p>
       </section>
-      <section className="ambassador-next">
-  <h2>Need Help Growing Your Content?</h2>
-  <p>
-    Explore our consulting services and take your LEGO content to the next level.
-  </p>
 
-  <Link to="/consulting">
-    <button className="ambassador-btn">
-      Go to Consulting
-    </button>
-  </Link>
-</section>
+      <section className="ambassador-next">
+        <h2>Need Help Growing Your Content?</h2>
+        <p>
+          Explore our consulting services and take your LEGO content to the
+          next level.
+        </p>
+
+        <Link to="/consulting">
+          <button className="ambassador-btn">Go to Consulting</button>
+        </Link>
+      </section>
 
       <footer className="about-footer">
         <p>© 2026 Firebird Bricks • Built with passion for LEGO</p>

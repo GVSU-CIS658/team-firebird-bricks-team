@@ -10,13 +10,33 @@ export default function Home() {
         <video autoPlay muted playsInline loop id="heroVideo">
           <source src={heroVideo} type="video/mp4" />
         </video>
+        <div className="heroOverlay">
+          <h1>Firebird Bricks</h1>
+          <p>Creative LEGO builds, stories, and showcases.</p>
+          <Link to="/about">
+            <button>Learn More</button>
+          </Link>
+        </div>
       </div>
 
+      <h2 className="storeTitle">Featured Merch</h2>
       <div className="storeSlider">
-        <div className="storeItem1"></div>
-        <div className="storeItem2"></div>
-        <div className="storeItem3"></div>
-        <div className="storeItem4"></div>
+        <div className="storeItem1">
+          <h3>Firebird Tee</h3>
+          <p>$24.99</p>
+        </div>
+        <div className="storeItem2">
+          <h3>Brick Mug</h3>
+          <p>$14.99</p>
+        </div>
+        <div className="storeItem3">
+          <h3>Sticker Pack</h3>
+          <p>$6.99</p>
+        </div>
+        <div className="storeItem4">
+          <h3>Poster Print</h3>
+          <p>$12.99</p>
+        </div>
       </div>
 
       <div className="about">
@@ -34,17 +54,17 @@ export default function Home() {
 
           <Link to="/about">
             <button>Go to About Page</button>
-            <div className="ambassador-home-simple">
-  <h2>Interested in joining Firebird Bricks?</h2>
-  <p>Learn more about our LEGO Ambassador Program.</p>
-
-  <Link to="/ambassador">
-    <button className="ambassador-btn">View Ambassador Program</button>
-  </Link>
-</div>
-
           </Link>
         </div>
+      </div>
+
+      <div className="ambassador-home-simple">
+        <h2>Interested in joining Firebird Bricks?</h2>
+        <p>Learn more about our LEGO Ambassador Program.</p>
+
+        <Link to="/ambassador">
+          <button className="ambassador-btn">View Ambassador Program</button>
+        </Link>
       </div>
     </div>
   );
