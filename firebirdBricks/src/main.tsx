@@ -1,14 +1,29 @@
-// src/main.tsx
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import Home from './pages/home' // Make sure this is home.tsx
-import './style.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/home";
+import About from "./pages/about";
+import Ambassador from "./pages/ambassador";
+import Consulting from "./pages/consulting";
+import Contact from "./pages/contact";
+import "./style.css";
 
-ReactDOM.createRoot(document.getElementById('app')!).render(
+const App = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/ambassador" element={<Ambassador />} />
+      <Route path="/consulting" element={<Consulting />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
+  );
+};
+
+ReactDOM.createRoot(document.getElementById("app")!).render(
   <React.StrictMode>
-    <Home />
-    <section id="center">
-      {/* Any other content you want here */}
-    </section>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
-)
+);
