@@ -6,17 +6,21 @@ import About from "./pages/about";
 import Ambassador from "./pages/ambassador";
 import Consulting from "./pages/consulting";
 import Contact from "./pages/contact";
+import NavBar from "./components/navBar";
 import "./style.css";
 
 const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/ambassador" element={<Ambassador />} />
-      <Route path="/consulting" element={<Consulting />} />
-      <Route path="/contact" element={<Contact />} />
-    </Routes>
+    <>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/ambassador" element={<Ambassador />} />
+        <Route path="/consulting" element={<Consulting />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </>
   );
 };
 

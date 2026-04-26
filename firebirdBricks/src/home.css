@@ -1112,6 +1112,30 @@
 .about-footer {
   margin-top: 60px;
 }
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #111;
+  color: #fff;
+}
+
+.site-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.site-nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.site-nav a:hover {
+  color: orange;
+}
+
 .success-message {
   margin-top: 15px;
   color: #4caf50;
