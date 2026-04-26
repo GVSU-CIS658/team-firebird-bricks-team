@@ -43,9 +43,10 @@ export default function Home() {
         <div className="aboutInner">
           <h1>ABOUT</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam elit
-            neque, dictum sit amet placerat et, hendrerit sed augue. In
-            tincidunt euismod metus vitae ultricies.
+            Firebird Bricks is a LEGO-focused YouTube channel dedicated to
+            creativity, builds, and storytelling through bricks. From custom
+            mechs to massive dioramas, we bring imagination to life one brick
+            at a time.
           </p>
 
           <Link to="/about">

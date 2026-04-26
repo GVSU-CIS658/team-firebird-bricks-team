@@ -742,16 +742,40 @@
 }
 
 .sponsor-hero-image {
-  height: 320px;
-  border-radius: 24px;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
   overflow: hidden;
+  border: 4px solid #f5a623;
+  box-shadow: 0 0 25px rgba(245, 166, 35, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.sponsor-hero-image::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, rgba(245, 166, 35, 0.25), transparent);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.sponsor-hero-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px rgba(245, 166, 35, 0.7);
 }
 
 .sponsor-hero-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 24px;
+  border-radius: 50%;
 }
 
 .sponsor-label {
