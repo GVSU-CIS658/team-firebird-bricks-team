@@ -1,34 +1,10 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/d7M8Pab7)
-# **Term Project**
-
-**Hello, Students!** 👋
-
-Your **Term Project** is an essential part of the course. Please review the instructions carefully to ensure a smooth and successful experience.
-
-- [**Project Instructions**](https://gvsu-cis658.github.io/project/term.html)
-
-### **Getting Started:**
-
-1. **Read** the full instructions carefully.
-2. **Understand** all requirements before starting.
-3. **Ask questions** if anything is unclear.
-
-### **Tips for Success:**
-
-- Follow guidelines closely.
-- Plan your work and stay on schedule.
-- Test your project regularly.
-
-Best of luck! 🚀
-
-###
+### View the Project
 
 Live website: https://webpagepioneers.com/
 
-###
+### Run Locally
 
-Local Installation guide:
+Installation guide:
 
-You will need to install the dependencies with "NPM INSTALL"
-Provide your own .env connection to a firebase project.
-
+1. Install the dependencies with `npm install`
+2. Provide your own `.env` connection to a Firebase project
