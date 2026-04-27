@@ -20,3 +20,15 @@ Your **Term Project** is an essential part of the course. Please review the inst
 - Test your project regularly.
 
 Best of luck! 🚀
+
+###
+
+Live website: https://webpagepioneers.com/
+
+###
+
+Local Installation guide:
+
+You will need to install the dependencies with "NPM INSTALL"
+Provide your own .env connection to a firebase project.
+
