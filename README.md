@@ -2,6 +2,8 @@
 
 Live website: https://webpagepioneers.com/
 Presentation Link: https://docs.google.com/presentation/d/1Ss-iNhK-Lq0mC4Rr_oHyxslt74jrWsGWmDKSl28I1-k/edit?usp=sharing
+## 📄 Final Report
+[Download Firebird Bricks Report](./Firebird_Bricks_University_Formatted.pdf)
 
 ### Run Locally
 
